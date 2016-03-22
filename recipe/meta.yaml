@@ -10,7 +10,7 @@ source:
     md5: e5d423724f9894aa2b2a1a8eb2314051
 
 build:
-    number: 0
+    number: 1
     preserve_egg_dir: True
     script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -29,7 +29,7 @@ test:
 
 about:
     home: https://github.com/cleder/pygeoif/
-    license: LGPL
+    license: LGPL-2.1
     summary: A basic implementation of the __geo_interface__
 
 extra:
