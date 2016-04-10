@@ -3,7 +3,7 @@ About pygeoif
 
 Home: https://github.com/cleder/pygeoif/
 
-Package license: LGPL
+Package license: LGPL-2.1
 
 Feedstock license: BSD
 
@@ -72,6 +72,11 @@ Current build status
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygeoif-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pygeoif-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygeoif-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygeoif-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygeoif-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygeoif-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygeoif/badges/version.svg)](https://anaconda.org/conda-forge/pygeoif)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pygeoif/badges/downloads.svg)](https://anaconda.org/conda-forge/pygeoif)
 
 
 Updating pygeoif-feedstock
