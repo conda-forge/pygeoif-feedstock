@@ -5,7 +5,7 @@ Home: https://github.com/cleder/pygeoif/
 
 Package license: LGPL-2.1
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A basic implementation of the __geo_interface__
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygeoif-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pygeoif-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygeoif-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygeoif-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygeoif-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygeoif-feedstock/branch/master)
