@@ -1,41 +1,40 @@
 {% set version = "0.6" %}
 
 package:
-    name: pygeoif
-    version: {{ version }}
+  name: pygeoif
+  version: {{ version }}
 
 source:
-    fn: pygeoif-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/p/pygeoif/pygeoif-{{ version }}.tar.gz
-    md5: e5d423724f9894aa2b2a1a8eb2314051
+  fn: pygeoif-{{ version }}.tar.gz
+  url: https://github.com/cleder/pygeoif/archive/{{ version }}.tar.gz
+  sha256: 2fa3436d8635bb6071a9531d51aa911c2db22cc9944cd75bc56012d92e349d26
 
 build:
-    number: 1
-    preserve_egg_dir: True
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
+  build:
+    - python
+    - setuptools
+  run:
+    - python
 
 test:
-    imports:
-        - pygeoif
-    requires:
-        - pytest
+  imports:
+    - pygeoif
+  requires:
+    - pytest
 
 about:
-    home: https://github.com/cleder/pygeoif/
-    license: LGPL-2.1
-    summary: A basic implementation of the __geo_interface__
+  home: https://github.com/cleder/pygeoif/
+  license: LGPL-2.1
+  summary: 'A basic implementation of the __geo_interface__'
 
 extra:
-    recipe-maintainers:
-        - benjwadams
-        - daf
-        - kwilcox
-        - lukecampbell
-        - ocefpaf
+  recipe-maintainers:
+    - benjwadams
+    - daf
+    - kwilcox
+    - lukecampbell
+    - ocefpaf
