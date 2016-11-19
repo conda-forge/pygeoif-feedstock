@@ -33,7 +33,6 @@ conda search pygeoif --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
