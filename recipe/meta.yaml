@@ -1,37 +1,40 @@
+{% set name = "pygeoif" %}
 {% set version = "1.0.0" %}
 
 package:
-  name: pygeoif
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: pygeoif-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/pygeoif/pygeoif-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoif-{{ version }}.tar.gz
   sha256: 5c90596d8b0b637b8e203d041df0b136f1831715698748f943bea6c3da4bd39d
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python
-    - setuptools
   run:
-    - python
+    - python >=3.7
+    - typing-extensions
 
 test:
   imports:
     - pygeoif
+  commands:
+    - pip check
   requires:
-    - pytest
+    - pip
 
 about:
   home: https://github.com/cleder/pygeoif/
-  license: LGPL-2.1
   summary: A basic implementation of the __geo_interface__
+  license: LGPL-2.1-or-later
+  license_file: docs/LICENSE.GPL
 
 extra:
   recipe-maintainers:
