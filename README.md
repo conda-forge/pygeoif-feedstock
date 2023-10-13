@@ -1,11 +1,11 @@
-About pygeoif
-=============
+About pygeoif-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoif-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cleder/pygeoif/
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pygeoif-feedstock/blob/main/LICENSE.txt)
 
 Summary: A basic implementation of the __geo_interface__
 
