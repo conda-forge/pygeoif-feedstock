@@ -34,7 +34,9 @@ about:
   home: https://github.com/cleder/pygeoif/
   summary: A basic implementation of the __geo_interface__
   license: LGPL-2.1-or-later
-  license_file: docs/LICENSE.txt
+  license_file:
+    - LICENSE.GPL
+    - LICENSE.txt
 
 extra:
   recipe-maintainers:
