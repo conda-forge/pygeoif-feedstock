@@ -1,5 +1,5 @@
 {% set name = "pygeoif" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoif-{{ version }}.tar.gz
-  sha256: e095c091e7a975ad967063f68fcb7131464deec86218e0d2fa6c870061f21349
+  sha256: 3ef7c5a98acfea3c5af1e8856184d538f3d216e12f3180fe0c1aa829933f5eb6
 
 build:
   noarch: python
