@@ -1,13 +1,13 @@
 {% set name = "pygeoif" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pygeoif-{{ version }}.tar.gz
-  sha256: 3ef7c5a98acfea3c5af1e8856184d538f3d216e12f3180fe0c1aa829933f5eb6
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygeoif-{{ version }}.tar.gz
+  sha256: f27a6b6a1ecb87aeacc2b51bcc59ca79be70ed12a0104de8601478b213dd5d81
 
 build:
   noarch: python
@@ -19,6 +19,7 @@ requirements:
     - python >=3.8
     - pip
   run:
+    - typing_extensions
     - python >=3.8
     - typing-extensions
 
